@@ -23,6 +23,7 @@ class UsersController extends Controller
             $password = Security::hash(Security::post('password'));
 
             if ($req['password'] == $password) {
+                Flash::setFlash(Alert::success("Bonjour " . $req['pseudo'] . " Vous êtes connectez"));
                 $_SESSION['user'] = $req;
                 echo json_encode(['state' => true]);
             } else {

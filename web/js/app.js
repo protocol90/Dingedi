@@ -54,6 +54,8 @@
         }
     });
 
+    $('#datepicker').datepicker();
+
     $("#ct_games, #ct_disciplines").hide();
 
     $("#ct_consoles select").on('change', function () {
