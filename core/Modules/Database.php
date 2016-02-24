@@ -3,7 +3,7 @@
 class Database
 {
 
-    static function select($table, $where = 'all')
+    static function select($table, $where = 'all', $options = '')
     {
         global $db;
 
@@ -16,6 +16,7 @@ class Database
                 $sql .= ' '.$w . " = '" . $k . "' AND";
             }
             $sql = substr($sql, 0, -3);
+            $sql .= " " . $options;
         }
         return $db->query($sql);
     }

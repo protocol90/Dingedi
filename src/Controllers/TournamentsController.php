@@ -51,7 +51,7 @@ class TournamentsController extends Controller
 
     public function tournamentsAction($console, $game)
     {
-        $tournaments = Database::select('tournaments', ['console_id' => $console, 'jeu_id' => $game])->fetchAll();
+        $tournaments = Database::select('tournaments', ['console_id' => $console, 'jeu_id' => $game],'ORDER BY date DESC')->fetchAll();
 
         return $this->render('tournaments@list', array(
             'tournaments' => $tournaments

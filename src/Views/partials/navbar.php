@@ -14,6 +14,7 @@
     <?php endif; ?>
 
     <li><a href="<?= Html::link(''); ?>"><span class="fa fa-home"></span> Accueil</a></li>
+    <li><a href="<?= Html::link('/'); ?>"><span class="fa fa-home"></span> Accueil</a></li>
     <li submenu="consoles"><a href="#"><span class="fa fa-sitemap"></span> Tous les tournois <span
                 class="fa fa-angle-right arrow"></span></a></li>
     <?php foreach ($consoles as $console): ?>
