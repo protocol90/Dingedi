@@ -1,3 +1,9 @@
+node_modules
+gulpfile.js
+*.zip
+.idea
+.phpintel
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

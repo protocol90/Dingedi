@@ -1,0 +1,210 @@
+/*
+===============================================================
+===============================================================
+     * App.css
+     * STYLESHEET
+     * Css AND Html by Yohan & Sébastien
+===============================================================
+===============================================================
+*/
+
+@import url('fonts.css');
+@import url('reset.css');
+@import url('jquery-ui.min.css');
+
+
+/*
+===============================================
+
+		*blue: #383c4a
+		*blueDark: #323644
+		*grey: #8d91ad
+		*purple: #e64472
+		*border: #404554
+		*green: #97D03E
+		*red: #ff5e5e
+
+===============================================
+*/
+
+/*
+===============================================
+		* GLOBAL
+===============================================
+*/
+
+body {
+	background-color: #f2f2f2;
+	font-family: Verdana, Arial, 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+/*
+===============================================
+		* NAVBAR_LEFT
+===============================================
+*/
+
+#navbar-left {background-color: #383c4a;width: 180px;position: fixed;top: 0;left: 0;bottom: 0;}
+
+/* Navbar-left title */
+#navbar-left .navbar-title {background-color: #e64472;width: 100%;height: 56px;color: #fff;font-size: 24px;font-family: 'Champagne_Bold';text-align: center;line-height: 56px;}
+#navbar-left a{text-decoration: none;}
+
+/* Menu_left user */
+#navbar-left .user {background-color: #323644;width: 100%;min-height: 56px;height:auto;border-bottom: 1px solid #404554;}
+#navbar-left .user img {height: 36px;width: 36px;border-radius: 36px;margin-top: 10px;margin-left: 10px;float: left;margin-right: 10px;}
+#navbar-left .user .username {color: #8d91ad;font-size: 11px;font-family: Verdana;line-height: 2px;padding-top: 20px;}
+#navbar-left .user .logout {color: #cc325e;font-size: 10px;font-family: Verdana;text-decoration: none;}
+#navbar-left .user .logout:hover {color: #e64472;transition-duration: 0.5s;}
+#navbar-left .user p .vip {color: #FE9001;position: absolute;margin-top: -10px;padding-left: -55px;}
+
+/* Menu_left Links */
+#navbar-left li {height: 34px;line-height: 34px;border-bottom: 1px solid #404554;list-style: none;}
+#navbar-left li a {text-decoration: none;color: #8d91ad;font-size: 11px;font-family: Verdana;margin-left: 10px;}
+#navbar-left li a:hover {color: #a6abc9;transition-duration: 1s;}
+#navbar-left li a .arrow {float: right;line-height: 34px;margin-right: 10px;}
+
+/* Menu_left sub-menu */
+#navbar-left .submenu {display: none;}
+#navbar-left .submenu li a{padding-left: 10px;}
+#navbar-left .submenu li:first-child {border-top: none;}
+
+/* Menu_left sub-menu consoles*/
+#navbar-left .submenu.submenu-jeux li a{padding-left: 20px;}
+
+/* Navbar_top */
+#navbar-top {background-color: #fff;height: 56px;border-bottom: 1px solid #dddddd;position: absolute; top: 0;left: 180px;right: 0;}
+
+/* Navbar-top icons */
+#navbar-top i {position:relative;float:left;height: 56px;line-height: 56px;font-size: 24px;margin-left: 40px;color: #b4b4b4;}
+#navbar-top a i .alert-amis {display:none;position: absolute;top: 8px;left: 15px;width: 15px;height: 15px;border-radius: 15px;line-height: 14px;text-align: center;background-color: #e64472;font-family: Verdana;font-size: 10px;color:#fff;}
+#navbar-top a i:hover .alert-amis {display:inline-block;}
+
+#navbar-top a i .friends_hover{display:none;position: absolute;top: 35px;left: -18px;width: 58px;height: 14px;padding: 0 3px;border-radius: 2px;line-height: 14px;text-align: center;background-color: #e64472;font-family: Verdana;font-size: 10px;color:#fff;}
+#navbar-top a i:hover .friends_hover{display:inline-block;}
+
+#navbar-top a i .param_hover{display:none;position: absolute;top: 35px;left: -15px;height: 14px;padding: 0 3px;border-radius: 2px;line-height: 14px;text-align: center;background-color: #e64472;font-family: Verdana;font-size: 10px;color:#fff;}
+#navbar-top a i:hover .param_hover{display: inline-block;}
+
+#navbar-top a i .mess_hover{display:none;position: absolute;top: 35px;left: -18px;height: 14px;padding: 0 3px;border-radius: 2px;line-height: 14px;text-align: center;background-color: #e64472;font-family: Verdana;font-size: 10px;color:#fff;}
+#navbar-top a i:hover .mess_hover{display: inline-block;}
+
+#navbar-top a i .logout_hover{display:none;position: absolute;top: 35px;left: -23px;height: 14px;padding: 0 3px;border-radius: 2px;line-height: 14px;text-align: center;background-color: #e64472;font-family: Verdana;font-size: 10px;color:#fff;}
+#navbar-top a i:hover .logout_hover{display: inline-block;}
+
+#navbar-top a i .vip_hover{display:none;position: absolute;top: 35px;left: -1px;height: 14px;padding: 0 3px;border-radius: 2px;line-height: 14px;text-align: center;background-color: #e64472;font-family: Verdana;font-size: 10px;color:#fff;}
+#navbar-top a i:hover .vip_hover{display: inline-block;}
+
+#navbar-top a i .admin_hover{display:none;position: absolute;top: 35px;left: -30px;height: 14px;padding: 0 3px;border-radius: 2px;line-height: 14px;text-align: center;background-color: #e64472;font-family: Verdana;font-size: 10px;color:#fff;}
+#navbar-top a i:hover .admin_hover{display: inline-block;}
+
+.none {display:none;}
+
+/* Navbar-top register */
+#navbar-top .register {background-color: #373838;float: right;}
+#navbar-top .register:hover {background-color: #e64472;transition-duration: .5s;}
+#navbar-top .register i{height: 56px;width: 65px;text-align: center;margin-left: 0;color: #fff;}
+
+/* Navbar-top connexion */
+#navbar-top .connexion {position: absolute;height: 56px;line-height: 56px;padding-left: 10px;}
+#navbar-top .connexion input {border: 1px solid #dddddd;border-radius: 2px;color: #797979;width: 170px;padding: 5px;}
+#navbar-top .connexion input[type="submit"] {background-color: #e64472;height: 28px;width: auto;border-radius: 2px;border: none;color: #fff;cursor: pointer;font-weight: 700;}
+#navbar-top .connexion .red {color:#ff5e5e;font-size: 12px; line-height: 56px;height: 56px;}
+#navbar-top .connexion .red i {float:right;}
+input::-webkit-input-placeholder {color: #dddddd!important;}
+input:-moz-placeholder {color: #dddddd!important;}
+input::-moz-placeholder {color: #dddddd!important;}
+input:-ms-input-placeholder {  color: #dddddd!important;}
+
+/* Content */
+#content {position: absolute;top: 57px;right: 0;bottom: 0;left: 180px;}
+
+/* Content alert */
+#content .alert {background-color: #fff;padding: 10px;font-size: 12px;border-bottom: 1px solid #dddddd;}
+#content .alert.green {color:#97D03E;}
+#content .alert.red {color:#ff5e5e;}
+#content .alert.red .vip_e{font-size: 12px;color:#ff5e5e;text-decoration: none;}
+#content .alert.green .vip_v{font-size: 12px;color:#97D03E;text-decoration: none;}
+
+/* Content info */
+#content .info {background-color: #fff;padding: 10px;font-size: 12px;border-bottom: 1px solid #dddddd;}
+#content .info p{color: #A6A8AB;}
+#content .info p a {font-weight: 700;text-decoration: none;color: #A6A8AB;}
+
+#content .tournois {background-color: #fff;padding: 20px 10px;font-size: 12px;border-bottom: 1px solid #dddddd;}
+#content .tournois .tournois_vip {background-color: #e64472;border:none;cursor: pointer;padding: 8px 10px;border-radius: 2px;}
+#content .tournois .tournois_vip a {text-decoration: none;color:#fff;font-size: 14px;line-height: 8px;}
+
+/* Content register */
+#content form .input {background-color: #fff;padding: 10px;font-size: 12px;border-bottom: 1px solid #dddddd;}
+#content form .input label {color: #ff5e5e;font-size: 12px;font-weight: 700;}
+#content form .input span {color: #A6A8AB;font-size: 12px;font-weight: 400;}
+#content form .input input {display: block;font-size: 12px;color: #A6A8AB;border: 1px solid #d1d1d1;border-radius: 2px;padding: 0px 8px;width: 159px;height: 26px;outline: none;margin-top: 5px;}
+#content form .input input[type="submit"] {background-color: #e64472;border:none;color: #fff;font-size: 16px;height: 30px;cursor: pointer;width: auto;}
+#content form .input select {outline: none;background-color: #fff;color: #A6A8AB;font-size: 12px;border: 1px solid #dddddd;border-radius: 2px;padding: 0px 8px;width: 159px;height: 26px;}
+#content form .input_file {background-color: #fff;padding: 10px;font-size: 12px;border-bottom: 1px solid #dddddd;}
+#content form .input_file label {color: #ff5e5e;font-size: 12px;font-weight: 700;display: block;margin-bottom: 5px;}
+#content form .input_heure {background-color: #fff;padding: 10px;font-size: 12px;border-bottom: 1px solid #dddddd;}
+#content form .input_heure label {color: #ff5e5e;font-size: 12px;font-weight: 700;}
+#content form .input_heure input {display: block;font-size: 12px;color: #A6A8AB;border: 1px solid #d1d1d1;border-radius: 2px;padding: 0px 8px;width: 15px;height: 26px;outline: none;margin-top: 5px;}
+#content form .captcha img{position: absolute;left: 553px;margin-top: 5px;color:red;}
+
+/* Content tournois */
+#content .container {width: 942px;margin: 20px auto 0 auto;}
+#content .container .tournois {background-color: #fff;width: 250px;height: auto;display: inline-block;margin-left: 30px;padding: 15px;margin-bottom: 30px;}
+#content .container .tournois span{color: #b6b6b6;font-size: 12px;display: block;font-family: Verdana;}
+#content .container .tournois .inscription {background-color: #e64472;width: 169px;border-radius: 2px;padding: 6px 4px;text-align: center;margin: 20px auto 10px auto;}
+#content .container .tournois .inscription.fin {background-color: #998f91;}
+#content .container .tournois .inscription.fin a {cursor: default;}
+#content .container .tournois a {font-size: 12px;font-family: Verdana;font-weight: 700;text-decoration: none;color: #fff;	}
+#content .container .tournois .live {text-align: center;}
+#content .container .tournois .live a {color:#998f91;font-weight: 400;}
+#content .container .tournois .live.direct {color:#97d03e;}
+#content .container .tournois .twitch  {font-size: 24px;color: #998f91;margin-left: 110px;margin-top: 10px;margin-bottom: 10px;}
+#content .container .tournois .twitch.live {color:#97d03e;}
+
+/* Content friends */
+#content .friends {width: 700px;margin: 50px auto 0 auto;}
+#content .friends .friends-title {background-color: #666666;width: 100%;height: 35px;line-height: 35px;}
+#content .friends .friends-title h3{color: #fff;font-size: 14px;font-weight: 700;font-family: 'Open Sans';margin-left: 10px;}
+#content .friends .friends-content {background-color: #fff;width: 100%;}
+#content .friends .friends-content p {padding: 10px;}
+#content .friends .friends-content p span{margin-left: 10px;position:absolute;padding-top: 15px;color:#e64472;font-size: 12px;}
+#content .friends .friends-content p img {border-radius: 50px;}
+
+/* Content administration */
+
+#content .administration  {background-color: #fff;padding: 15px;font-size: 12px;border-bottom: 1px solid #dddddd;}
+#content .administration  a {text-decoration: none;background-color: #97D03E;border-radius: 2px;border: none;padding: 5px;color: #fff;margin-right: 15px;font-weight: 700;}
+#content .administration label {font-size: 16px;color:#97D03E;font-family: 'Champagne_Bold';}
+
+/* Content profil */
+#content .profil  {position: absolute;width: 100%;background-color: #fff;padding: 15px;font-size: 12px;border-bottom: 1px solid #dddddd;}
+#content .profil .left {width: 30%;}
+#content .profil img {width: 150px;height: 150px;float: left;padding-right: 10px;}
+
+#content .profil .information {margin-left: 10px;}
+
+#content .profil .information .mail {color: #8d91ad;font-size: 12px;padding-bottom: 5px;}
+#content .profil .information .mail i{color: #ff5e5e;font-size: 12px;}
+
+#content .profil .information .skype {color: #8d91ad;font-size: 12px;padding-bottom: 5px;}
+#content .profil .information .skype i{color: #ff5e5e;font-size: 12px;}
+
+#content .profil .information .twitch {color: #8d91ad;font-size: 12px;padding-bottom: 5px;}
+#content .profil .information .twitch i{color: #ff5e5e;font-size: 12px;}
+
+#content .profil .information .facebook {color: #8d91ad;font-size: 12px;padding-bottom: 5px;}
+#content .profil .information .facebook i{color: #ff5e5e;font-size: 12px;}
+
+#content .profil .information .twitter {color: #8d91ad;font-size: 12px;padding-bottom: 5px;}
+#content .profil .information .twitter i{color: #ff5e5e;font-size: 12px;}
+
+#content .profil .right {width: 50%;margin-left: 35%;position: absolute;top: 5px;line-height: 20px;}
+#content .profil .right .name {color:#ff5e5e;font-family: 'Champagne_Bold';font-size: 20px;margin-top: 10px;}
+#content .profil .right .grade {color: #8d91ad;font-size: 10px;padding-top: 5px;padding-bottom: 5px;}
+#content .profil .right p {color: #8d91ad;}
+
+
+

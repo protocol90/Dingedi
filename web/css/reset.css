@@ -1,0 +1,34 @@
+/*
+===============================================================
+===============================================================
+     * reset.css
+     * RESET
+===============================================================
+===============================================================
+*/
+
+*{margin: 0;padding: 0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td,p{padding:0;margin:0;font-weight:lighter;}
+table{border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+strong{font-weight:bold;}
+ol, ul{list-style:none;margin:0;padding:0;}
+caption,th{text-align:left;}
+q:before, q:after{content:'';}
+abbr, acronym{border:0;}
+i{font-style:normal;font-weight:bold;}
+
+*::selection{background:#ff2754;color:#ffffff;text-shadow:0px 1px 1px #000000;}
+*::-moz-selection{background:#ff2754;color:#ffffff;text-shadow:0px 1px 1px #000000;}
+*::-webkit-selection{background:#ff2754;color:#ffffff;text-shadow:0px 1px 1px #000000;}
+*::-khtml-selection{background:#ff2754;color:#ffffff;text-shadow:0px 1px 1px #000000;}
+*::ô-selection{background:#ff2754;color:#ffffff;text-shadow:0px 1px 1px #000000;}
+
+:placeholder{color:#cbcdd0;}
+::-webkit-input-placeholder{color:#cbcdd0;}
+::-moz-placeholder{color:#cbcdd0;} /* firefox 19+ */
+:-ms-input-placeholder{color:#cbcdd0;} /* ie */
+input:-moz-placeholder{color:#cbcdd0;}
+@font-face{font-weight:normal;font-style:normal;}
