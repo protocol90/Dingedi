@@ -5,7 +5,7 @@ class AdminController extends Controller
     public function __construct()
     {
         if (Session::get('admin') != 1) {
-            Flash::setFlash(Alert::error('Ahah petit malin, tu veut entrer dans le cour des grands ?'));
+            Flash::setFlash(Alert::error('Haha petit malin, tu veut entrer dans le cour des grands ?'));
             Tools::redirect(Html::link('/'));
             exit();
         }
